@@ -15,7 +15,9 @@ Store is responsible for the unique id generation.
 **Flow Of The Application**
 OrderController -> OrderService -> OrderStore
 
-**OrderControllerApp** is the main class. Application can be queried like below 
+**OrderControllerApp** is the main class. 
+
+Application can be queried like below 
 
 Adding a SELL:
 curl -X POST -H 'Content-Type: application/json' -d'{"type":"SELL","userId":"T1","quantity":"4.5","price":"321"}' http://localhost:9999/rest/api/order
